@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Resume Analyzer</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <h1>AI Resume Analyzer</h1>
+
+    <p>Upload your resume and get AI suggestions.</p>
+
+    <input type="file" id="resume">
+
+    <br><br>
+
+    <button id="analyze-btn" onclick="analyzeResume()">
+        Analyze Resume
+    </button>
+
+    <p id="loading" style="display:none;">
+        Analyzing Resume...
+    </p>
+
+    <div class="result-box">
+
+        <h2 id="score">ATS Score: 85%</h2>
+
+        <div class="progress-bar">
+
+            <div class="progress"></div>
+
+        </div>
+
+        <h3>Detected Skills</h3>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+
+        <h3>AI Suggestions</h3>
+
+        <p id="suggestion">
+            Add React and SQL skills to improve your resume.
+        </p>
+
+        <p>✔ Good Resume Format</p>
+
+        <p>✔ Add More Projects</p>
+
+        <p>✔ Improve Skills Section</p>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
